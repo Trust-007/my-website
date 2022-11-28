@@ -1,34 +1,27 @@
 import Form from "./Form";
+import Socials from "./Socials";
 import { Link } from "react-router-dom";
 import classes from "./MyContact.module.css";
 
 const MyContact = () => {
   return (
-    <>
-      <div className={classes.container}>
-        <div className={classes.contain}>
-          <div className={classes.poster}>
-            <h1>Contact</h1>
+    <div className={classes.container}>
+      <div className={classes.contain}>
+        <div className={classes.poster}>
+          <h1>Contact</h1>
+        </div>
+        <div className={classes.contact_section}>
+          <div className={classes.contact_dialogue}>
+            I see you found your way here, you must mean business. If you want
+            to work on a project together, want to talk about a job offer, just
+            want to buy me coffee, or want to play games just send me a quick
+            email.
           </div>
-          <div className={classes.contact_section}>
-            <Form />
-          </div>
+          <Form />
+          <Socials />
         </div>
       </div>
-      <div className={classes.next_step}>
-        Okay,so now you know a little about me, Lets talk business.
-        <div className={classes.directions}>
-          <Link to="/contact" className={classes.directions_btn}>
-            {" "}
-            Contact{" "}
-          </Link>
-          <Link to="/portfolio" className={classes.directions_btn}>
-            {" "}
-            Portfolio{" "}
-          </Link>
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
 

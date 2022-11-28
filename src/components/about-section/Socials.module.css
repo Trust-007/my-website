@@ -1,0 +1,39 @@
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 30px;
+  width: 80%;
+  margin: 10% auto;
+  opacity: 0;
+  animation: Slide 0.5s linear 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.github {
+  color: white;
+  cursor: pointer;
+}
+
+.linkedin {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.twitter {
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes Slide {
+  0% {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

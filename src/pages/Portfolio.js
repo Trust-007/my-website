@@ -1,9 +1,11 @@
-const Portfolio = () =>{
-   return(
-    <div>
-        Portfolio Page
-    </div>
-   )
-}
+import Projects from "../components/portfolio/Projects";
+
+const Portfolio = () => {
+  return (
+    <>
+      <Projects />
+    </>
+  );
+};
 
 export default Portfolio;
