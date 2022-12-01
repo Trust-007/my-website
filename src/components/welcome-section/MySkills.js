@@ -16,7 +16,7 @@ const MySkills = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <div className={classes.container}>
         <div className={classes.contain}>
           <div className={classes.poster}>
@@ -121,16 +121,14 @@ const MySkills = () => {
         Okay,so now you know a little about me, Lets talk business.
         <div className={classes.directions}>
           <Link to="/contact" className={classes.directions_btn}>
-            {" "}
-            Contact{" "}
+            Contact
           </Link>
           <Link to="/portfolio" className={classes.directions_btn}>
-            {" "}
-            Portfolio{" "}
+            Portfolio
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

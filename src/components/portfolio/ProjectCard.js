@@ -1,5 +1,4 @@
 import classes from "./ProjectCard.module.css";
-import todo from "../../assets/todo.png";
 const ProjectCard = (props) => {
   const { image, liveLink, sourceLink, alt } = props.data;
   return (

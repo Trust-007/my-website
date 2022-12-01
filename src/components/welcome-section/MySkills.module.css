@@ -61,7 +61,7 @@
 }
 
 .skills_section ul li:hover {
-  animation: jiggle 0.6s;
+  animation: jiggle linear 0.6s;
   cursor: pointer;
 }
 
@@ -85,6 +85,7 @@
   color: white;
   margin-block-start: 40px;
 }
+
 .directions_btn {
   width: 100px;
   text-align: center;
