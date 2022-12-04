@@ -65,7 +65,23 @@ const Projects = () => {
     const { image, liveLink, sourceLink, alt } = project;
     return <ProjectCard data={{ image, liveLink, sourceLink, alt }} />;
   });
-  return <ul className={classes.container}>{projectList}</ul>;
+  return (
+    <div>
+      <div className={classes.pop_message}>
+        <p>
+          Here are some of the recent projects I've worked or collaborated on.
+          Click link below to see all my projects on Github.
+        </p>
+        <a
+          href="https://github.com/Trust-007?tab=repositories"
+          className={classes.more_projects}
+        >
+          See more!
+        </a>
+      </div>
+      <ul className={classes.container}>{projectList}</ul>;
+    </div>
+  );
 };
 
 export default Projects;

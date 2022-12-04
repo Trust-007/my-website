@@ -5,10 +5,11 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  z-index: 60;
 }
 
 .pic {
-  width: 100%;
+  width: 350px;
   position: relative;
   transition: 1s;
   filter: brightness(50%);
@@ -43,7 +44,7 @@
 .sourceLive a {
   width: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   background-color: rgb(9, 146, 146);
   padding: 20px;

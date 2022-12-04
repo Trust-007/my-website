@@ -25,42 +25,12 @@
 
 .skills_section {
   width: 100%;
-  height: fit-content;
+  height: 200vh;
   background-color: white;
   text-align: start;
-  padding-left: 5%;
 }
-.skills_section h3 {
-  text-align: center;
-  margin-top: 5%;
-  font-family: monospace;
-  font-size: 30px;
-}
-.skills_section ul {
-  list-style: none;
-  margin-top: 20px;
-}
-.skills_section ul li {
-  font-size: 20px;
-  margin-block: 20px;
-  font-weight: 400;
-}
-
-.skill {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 70px;
-}
-.engines_section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.skills_section ul li:hover {
-  animation: jiggle linear 0.6s;
-  cursor: pointer;
+.skills_section div {
+  max-width: 100%;
 }
 
 .next_step {
@@ -78,8 +48,10 @@
 }
 
 .next_step p {
+  text-align: center;
   color: white;
   font-size: 20px;
+  margin-inline: 10%;
 }
 
 .directions {
@@ -117,5 +89,31 @@
   }
   75% {
     transform: scale(0.7, 1.2);
+  }
+}
+
+@media (max-width: 1200px) {
+  .contain {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .contain {
+    flex-direction: column;
+  }
+
+  .poster {
+    position: relative;
+  }
+}
+
+@media (max-width: 420px) {
+  .directions {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 }

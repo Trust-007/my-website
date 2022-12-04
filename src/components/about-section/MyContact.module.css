@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   z-index: 1;
   margin-left: 6%;
+  font-family: "Lato", "sans-serif";
 }
 
 .poster {
@@ -36,6 +37,8 @@
   margin: auto;
   margin-block: 50px;
   color: white;
+  font-weight: 300;
+  line-height: 30px;
   animation: Slide 0.5s linear 1;
 }
 
@@ -47,5 +50,27 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contain {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .contain {
+    flex-direction: column;
+  }
+
+  .poster {
+    width: 100%;
+    position: relative;
+  }
+
+  .contact_section {
+    width: 100%;
+    padding-bottom: 20%;
   }
 }

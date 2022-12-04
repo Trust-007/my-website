@@ -49,3 +49,27 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 1200px) {
+  .welcome {
+    padding-left: 5%;
+  }
+
+  .welcome h1 {
+    font-size: 14vw;
+  }
+
+  .contain_paragraph {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome h1 {
+    font-size: 16vw;
+  }
+
+  .contain_paragraph {
+    width: 100%;
+  }
+}
