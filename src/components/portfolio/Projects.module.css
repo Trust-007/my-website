@@ -14,7 +14,7 @@
   right: 5%;
   width: 30%;
   padding: 30px;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   background-color: rgba(0, 0, 0, 0.644);
   backdrop-filter: blur(15px);
@@ -51,6 +51,7 @@
   padding: 10px;
   text-align: center;
   align-self: flex-start;
+  letter-spacing: 2px;
 }
 
 .more_projects:hover {
@@ -97,6 +98,23 @@
   .container {
     grid-template-columns: auto auto;
     margin-bottom: 4.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pop_message {
+    left: 15%;
+    width: 50%;
+    font-size: 17px;
+  }
+
+  @keyframes outro {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-700px);
+    }
   }
 }
 

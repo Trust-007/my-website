@@ -4,7 +4,6 @@
   align-items: flex-start;
   z-index: 1;
   margin-left: 6%;
-  font-family: "Lato", sans-serif;
 }
 .poster {
   width: 100%;
@@ -25,19 +24,90 @@
 
 .skills_section {
   width: 100%;
-  height: 200vh;
   background-color: white;
-  text-align: start;
+  font-family: "Lato", sans-serif;
 }
-.skills_section div {
-  max-width: 100%;
+
+.about_intro {
+  max-width: 70%;
+  margin: 15% auto;
+}
+
+.about_intro h2 {
+  font-size: 18px;
+}
+
+.about_intro p {
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 7%;
+}
+
+.about_intro h3 {
+  width: 80px;
+  font-size: 30px;
+  margin-block: 13%;
+  padding: 5px;
+  border-left: 4px solid #5cdb95;
+}
+
+.chart {
+  width: 100%;
+}
+
+.chart span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.chart footer {
+  background-color: rgb(65, 64, 64);
+  height: 3px;
+  margin-block: 5px;
+  margin-bottom: 25px;
+}
+
+.chart footer div {
+  height: inherit;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.front_end {
+  background-color: #5cdb95;
+  transition-delay: 0.7s;
+}
+
+.back_end {
+  background-color: rgb(255, 34, 83);
+  transition-delay: 0.9s;
+}
+
+.react {
+  background-color: rgb(210, 108, 213);
+  transition-delay: 1.1s;
+}
+
+.rails {
+  background-color: aqua;
+  transition-delay: 1.3s;
+}
+
+.more_skills a {
+  text-decoration: none;
+  color: rgb(9, 170, 170);
+}
+
+.hobbies {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .next_step {
   width: 100%;
   height: 100vh;
   background-color: rgb(24, 21, 21);
-  font-family: "Lato", "sans-serif";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +142,7 @@
   text-decoration: none;
   color: white;
   font-size: 19;
+  letter-spacing: 2px;
   transition: 2s;
 }
 
@@ -109,6 +180,9 @@
 }
 
 @media (max-width: 420px) {
+  .next_step {
+    padding-bottom: 15%;
+  }
   .directions {
     flex-direction: column;
     width: 100%;

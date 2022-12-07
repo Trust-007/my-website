@@ -11,48 +11,56 @@ import shop from "../../assets/shop.png";
 import classes from "./Projects.module.css";
 const projects = [
   {
+    id: "1",
     image: food,
     liveLink: "https://food-order-demo.netlify.app/",
     sourceLink: "https://github.com/Trust-007/Food-Order",
     alt: "image of food order site",
   },
   {
+    id: "2",
     image: expense,
     liveLink: "https://a-expenses-tracker.netlify.app/",
     sourceLink: "https://github.com/Trust-007/Expenses-Tracker",
     alt: "image of expense tracker site",
   },
   {
+    id: "3",
     image: convention,
     liveLink: "https://trust-007.github.io/Gaming-Website/html/index",
     sourceLink: "https://github.com/Trust-007/Gaming-Website",
     alt: "image of convention site",
   },
   {
+    id: "4",
     image: books,
     liveLink: "https://trust-007.github.io/Awesome-Books/",
     sourceLink: "https://github.com/Trust-007/Awesome-Books",
     alt: "image of food order site",
   },
   {
+    id: "5",
     image: quotes,
     liveLink: "https://my-great-quotes-app.netlify.app/",
     sourceLink: "https://github.com/Trust-007/Quotes-site",
     alt: "image of quotes site",
   },
   {
+    id: "6",
     image: todo,
     liveLink: "https://",
     sourceLink: "https://",
     alt: "image of todo-list site",
   },
   {
+    id: "7",
     image: leaderboard,
     liveLink: "https://trust-007.github.io/LeaderBoard/dist/",
     sourceLink: "https://github.com/Trust-007/LeaderBoard",
     alt: "image of leaderboard site",
   },
   {
+    id: "8",
     image: shop,
     liveLink: "https://trust-cart-redux.netlify.app/",
     sourceLink: "https://github.com/Trust-007/Shopping-Cart-with-redux",
@@ -62,8 +70,8 @@ const projects = [
 
 const Projects = () => {
   const projectList = projects.map((project) => {
-    const { image, liveLink, sourceLink, alt } = project;
-    return <ProjectCard data={{ image, liveLink, sourceLink, alt }} />;
+    const { image, liveLink, sourceLink, alt, id } = project;
+    return <ProjectCard key={id} data={{ image, liveLink, sourceLink, alt }} />;
   });
   return (
     <div>

@@ -45,9 +45,7 @@ const Form = () => {
       />
       <label
         htmlFor="name"
-        style={
-          !nameEmpty ? { top: "-10px", left: "5px", fontSize: "14px" } : {}
-        }
+        style={!nameEmpty ? { top: "-8px", left: "5px", fontSize: "14px" } : {}}
       >
         Name
       </label>
@@ -62,7 +60,7 @@ const Form = () => {
       <label
         htmlFor="email"
         style={
-          !emailEmpty ? { top: "55px", left: "5px", fontSize: "14px" } : {}
+          !emailEmpty ? { top: "54px", left: "5px", fontSize: "14px" } : {}
         }
       >
         Email
