@@ -38,3 +38,15 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 370px) {
+  @keyframes outro {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      padding-left: 190px;
+      opacity: 0;
+    }
+  }
+}

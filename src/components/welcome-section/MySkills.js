@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ProgressBar from "./ProgressBar";
+import { TypeAnimation } from "react-type-animation";
 import classes from "./MySkills.module.css";
-import WheelSvg from "./WheelSvg";
+import Quotes from "./Quotes";
 
 const MySkills = () => {
   const myRef = useRef();
@@ -22,103 +22,110 @@ const MySkills = () => {
           <h1>About</h1>
         </div>
         <div className={classes.skills_section}>
-          <div>
-            My name is Simeon Trust, i am a Software engineer and a Data
-            Analyst. I live in Nigeria in the city of lagos. I am currently
-            studying Mathematics at the University of Ibadan. I love to code, go
-            swimming, play basketball, also like video games and i love me some
-            good music.
-          </div>
-          <div>
-            <h3>Languages</h3>
-            <ul ref={myRef}>
-              <div className={classes.skill}>
-                <li>HTML</li>
-                <ProgressBar
-                  delay="0.5s"
-                  progress={`${mySkillsIsVisible ? "95%" : "0%"}`}
-                />
-              </div>
-              <div className={classes.skill}>
-                <li>CSS</li>
-                <ProgressBar
-                  delay="1s"
-                  progress={`${mySkillsIsVisible ? "95%" : "0%"}`}
-                />
-              </div>
-              <div className={classes.skill}>
-                <li>Javascript</li>
-                <ProgressBar
-                  delay="1.5s"
-                  progress={`${mySkillsIsVisible ? "85%" : "0%"}`}
-                />
-              </div>
-              <div className={classes.skill}>
-                <li>Python</li>
-                <ProgressBar
-                  delay="2s"
-                  progress={`${mySkillsIsVisible ? "90%" : "0%"}`}
-                />
-              </div>
-              <div className={classes.skill}>
-                <li>Ruby</li>
-                <ProgressBar
-                  delay="2.5s"
-                  progress={`${mySkillsIsVisible ? "75%" : "0%"}`}
-                />
-              </div>
-              <div className={classes.skill}>
-                <li>C#</li>
-                <ProgressBar
-                  delay="3s"
-                  progress={`${mySkillsIsVisible ? "70%" : "0%"}`}
-                />
-              </div>
-            </ul>
-          </div>
-          <div>
-            <h3>Technologies</h3>
-            <div className={classes.engines_section}>
-              <ul>
-                <div className={classes.skill}>
-                  <li>React</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Redux</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Rails</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>AWS</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Sk-learn</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Next.js</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Numpy</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Matplotlib</li>
-                </div>
-                <div className={classes.skill}>
-                  <li>Pandas</li>
-                </div>
-              </ul>
-              <div>
-                <WheelSvg />
-              </div>
+          <div className={classes.about_intro}>
+            <h2>
+              I am a Software Engineer and an aspiring Data Scientist from
+              Lagos, Nigeria.
+            </h2>
+            <p>
+              I started my tech journey as a self taught programmer and though
+              it was a little challenging combating with bugs and all, I was
+              able to press on because of the love I had for it. As I kept on
+              growing in knowledge of the tech world I came to realize that it
+              was really vast and this helped me to keep an open mind knowing
+              that there is always more to learn. Through experience I have seen
+              that research is key to success because there isn't any problem
+              out there which hasn't been attempted. I have a serious passion
+              for UI effects, animations and creating intuitive, dynamic user
+              experiences.
+            </p>
+            <p>
+              Well-organised person, problem solver, hard-working, and
+              relentless. Fell in love with pair-programming and scrum habits
+              completing course-work at Microverse. Have a lot of interest in
+              Artificial intelligence and Machine learning.
+            </p>
+            <h3 ref={myRef}>Skills</h3>
+            <div className={classes.chart}>
+              <span>Front-end</span>
+              <footer>
+                <div
+                  style={mySkillsIsVisible ? { width: "95%" } : { width: "0" }}
+                  className={classes.front_end}
+                ></div>
+              </footer>
             </div>
+
+            <div className={classes.chart}>
+              <span>Back-end</span>
+              <footer>
+                <div
+                  style={mySkillsIsVisible ? { width: "75%" } : { width: "0" }}
+                  className={classes.back_end}
+                ></div>
+              </footer>
+            </div>
+
+            <div className={classes.chart}>
+              <span>ReactJS</span>
+              <footer>
+                <div
+                  style={mySkillsIsVisible ? { width: "70%" } : { width: "0" }}
+                  className={classes.react}
+                ></div>
+              </footer>
+            </div>
+
+            <div className={classes.chart}>
+              <span>Rails</span>
+              <footer>
+                <div
+                  style={mySkillsIsVisible ? { width: "55%" } : { width: "0" }}
+                  className={classes.rails}
+                ></div>
+              </footer>
+            </div>
+
+            <p className={classes.more_skills}>
+              To see all my skills checkout my{" "}
+              <a href="https://www.linkedin.com/in/trust-simeon">linkedin</a> or{" "}
+              <a href="https://www.github.com/Trust-007">github</a> profiles.
+            </p>
+
+            <h3>Hobbies</h3>
+            <div className={classes.hobbies}>
+              <p>I love </p>
+              <TypeAnimation
+                sequence={[
+                  "Swimming",
+                  3000,
+                  "Basketball",
+                  3000,
+                  "Video games",
+                  3000,
+                  "Adventure Novels",
+                  3000,
+                  "Pandas",
+                  3000,
+                ]}
+                wrapper="p"
+                cursor={false}
+                repeat={Infinity}
+                speed={0}
+                style={{ color: "sandybrown" }}
+              />
+            </div>
+            <a
+              href="https://docs.google.com/document/d/1AU5zjemvTW8AvRFUmpOEyz8tnY5tGk63fJpnC1P3je8/edit?usp=sharing"
+              className={classes.resume}
+            >
+              My Resume
+            </a>
           </div>
         </div>
       </div>
-
       <div className={classes.next_step}>
-        <p>Okay, so now you know a little about me, Lets talk business.</p>
-
+        <Quotes />
         <div className={classes.directions}>
           <Link to="/contact" className={classes.directions_btn}>
             Contact

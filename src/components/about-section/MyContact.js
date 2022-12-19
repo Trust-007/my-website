@@ -1,6 +1,5 @@
 import Form from "./Form";
 import Socials from "./Socials";
-import { Link } from "react-router-dom";
 import classes from "./MyContact.module.css";
 
 const MyContact = () => {

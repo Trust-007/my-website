@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+.instagram {
+  color: white;
+}
+
 @keyframes Slide {
   0% {
     transform: translateY(50px);

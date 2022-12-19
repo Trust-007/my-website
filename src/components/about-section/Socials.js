@@ -1,5 +1,5 @@
 import classes from "./Socials.module.css";
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter, BsInstagram } from "react-icons/bs";
 
 const Socials = () => {
   return (
@@ -12,6 +12,9 @@ const Socials = () => {
       </a>
       <a href="https://www.twitter.com/simeontrust7">
         <BsTwitter className={classes.twitter} />
+      </a>
+      <a href="https://www.instagram.com/trustsimeon/">
+        <BsInstagram className={classes.instagram} />
       </a>
     </div>
   );

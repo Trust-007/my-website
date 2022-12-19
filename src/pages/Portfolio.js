@@ -1,8 +1,11 @@
 import Projects from "../components/portfolio/Projects";
 import LoadingPage from "../components/loading/LoadingPage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Portfolio = () => {
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
   const [isLoading, setIsLoading] = useState(false);
   setTimeout(() => {
     setIsLoading(true);

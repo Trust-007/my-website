@@ -20,11 +20,13 @@ nav ul {
   gap: 40px;
   padding: 10px;
 }
+
 nav ul li {
   scale: 1;
   text-align: center;
   cursor: auto;
 }
+
 nav ul li p {
   padding-block: 5px;
   padding-inline: 5px;
@@ -35,6 +37,7 @@ nav ul li p {
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -48,18 +51,21 @@ nav ul li:hover p {
   transition-duration: 1s;
 }
 
-nav ul li:hover {
-  animation: jiggle 0.6s ease-out 1;
-  cursor: pointer;
-}
 .Icon {
   font-size: 25px;
   transition: 0.5s;
   transition-timing-function: linear;
 }
-.active {
-  color: #5cdb95;
+
+nav ul li:hover .Icon {
+  animation: jiggle 0.6s ease-out 1;
+  cursor: pointer;
 }
+
+.active {
+  color: cyan;
+}
+
 .active .Icon {
   font-size: 40px;
   transition: 0.5s;
@@ -77,5 +83,50 @@ nav ul li:hover {
 
   75% {
     transform: scale(0.7, 1.2);
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 100%;
+    right: 0;
+    transform: translateY(-100%);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  nav ul {
+    width: 100%;
+    height: inherit;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  nav ul li {
+    display: flex;
+    height: inherit;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul li p {
+    opacity: 1;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .Icon {
+    font-size: 20px;
+  }
+
+  .active .Icon {
+    font-size: 30px;
   }
 }

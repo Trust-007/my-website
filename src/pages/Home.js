@@ -1,9 +1,12 @@
 import MyHome from "../components/welcome-section/MyHome";
 import LoadingPage from "../components/loading/LoadingPage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    document.title = "TrustMe";
+  }, []);
   setTimeout(() => {
     setIsLoading(true);
   }, 2000);

@@ -1,0 +1,33 @@
+.container {
+  width: 70%;
+}
+
+blockquote {
+  font-family: "Pacifico", cursive;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+
+.author_category {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.category {
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 90%;
+  }
+}

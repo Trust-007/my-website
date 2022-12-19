@@ -1,7 +1,125 @@
 .container {
   display: grid;
+  height: 95vh;
   grid-template-columns: 25% 25% 25% 25%;
   justify-content: center;
-  margin-left: 6%;
+  margin-left: 5.5%;
   background-color: rgb(36, 33, 33);
+  z-index: 50;
+}
+
+.pop_message {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 30%;
+  padding: 30px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 100;
+  animation-name: intro, outro;
+  animation-duration: 0.3s;
+  animation-delay: 0s, 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.more_projects {
+  outline: none;
+  font-size: 17px;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 100px;
+  background: linear-gradient(70deg, cyan 50%, black 50%);
+  color: cyan;
+  background-size: 400%;
+  background-position: right;
+  border: 1px solid cyan;
+  transition: 1s;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  align-self: flex-start;
+  letter-spacing: 2px;
+}
+
+.more_projects:hover {
+  background-position: left;
+  color: black;
+}
+
+@keyframes intro {
+  0% {
+    transform: translateY(-700px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes outro {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(3%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(5%);
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: auto;
+    margin-left: 0;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: auto auto;
+    margin-bottom: 4.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pop_message {
+    left: 15%;
+    width: 50%;
+    font-size: 17px;
+  }
+
+  @keyframes outro {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-700px);
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    grid-template-columns: auto;
+    margin-bottom: 6%;
+  }
 }
