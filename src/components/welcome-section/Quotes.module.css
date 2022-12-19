@@ -20,14 +20,30 @@ blockquote {
 .author {
   font-style: italic;
   font-weight: 100;
+  font-size: 20px;
+  color: cyan;
 }
 
 .category {
   font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 20px;
 }
 
 @media (max-width: 420px) {
   .container {
     width: 90%;
+  }
+
+  blockquote {
+    font-size: 18px;
+  }
+
+  .author {
+    font-size: 17px;
+  }
+
+  .category {
+    font-size: 17px;
   }
 }

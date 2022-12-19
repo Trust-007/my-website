@@ -150,13 +150,6 @@
   z-index: -1;
 }
 
-.next_step p {
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  margin-inline: 10%;
-}
-
 .directions {
   width: 100%;
   display: flex;
