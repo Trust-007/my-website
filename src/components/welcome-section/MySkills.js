@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
 import classes from "./MySkills.module.css";
 import Quotes from "./Quotes";
 
@@ -92,6 +93,34 @@ const MySkills = () => {
             </p>
 
             <h3>Hobbies</h3>
+            <div className={classes.hobbies}>
+              <p>I love </p>
+              <TypeAnimation
+                sequence={[
+                  "Swimming",
+                  3000,
+                  "Basketball",
+                  3000,
+                  "Video games",
+                  3000,
+                  "Adventure Novels",
+                  3000,
+                  "Pandas",
+                  3000,
+                ]}
+                wrapper="p"
+                cursor={false}
+                repeat={Infinity}
+                speed={0}
+                style={{ color: "sandybrown" }}
+              />
+            </div>
+            <a
+              href="https://docs.google.com/document/d/1AU5zjemvTW8AvRFUmpOEyz8tnY5tGk63fJpnC1P3je8/edit?usp=sharing"
+              className={classes.resume}
+            >
+              My Resume
+            </a>
           </div>
         </div>
       </div>

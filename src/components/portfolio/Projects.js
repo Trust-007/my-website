@@ -4,7 +4,7 @@ import books from "../../assets/books.png";
 import convention from "../../assets/convention.png";
 import expense from "../../assets/expense.png";
 import food from "../../assets/food.png";
-import leaderboard from "../../assets/leaderboard.png";
+import movies from "../../assets/movies.png";
 import quotes from "../../assets/quotes.png";
 import shop from "../../assets/shop.png";
 
@@ -48,16 +48,16 @@ const projects = [
   {
     id: "6",
     image: todo,
-    liveLink: "https://",
-    sourceLink: "https://",
+    liveLink: "https://todo-list-epdf.onrender.com/",
+    sourceLink: "https://github.com/Trust-007/Todo-List",
     alt: "image of todo-list site",
   },
   {
     id: "7",
-    image: leaderboard,
-    liveLink: "https://trust-007.github.io/LeaderBoard/dist/",
-    sourceLink: "https://github.com/Trust-007/LeaderBoard",
-    alt: "image of leaderboard site",
+    image: movies,
+    liveLink: "https://asharanjith.github.io/Javascript-Group-Capstone/",
+    sourceLink: "https://github.com/asharanjith/Javascript-Group-Capstone",
+    alt: "image of movies site",
   },
   {
     id: "8",

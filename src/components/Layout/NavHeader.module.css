@@ -63,7 +63,7 @@ nav ul li:hover .Icon {
 }
 
 .active {
-  color: #5cdb95;
+  color: cyan;
 }
 
 .active .Icon {

@@ -3,12 +3,12 @@
   justify-content: space-evenly;
   align-items: flex-start;
   z-index: 1;
-  margin-left: 6%;
+  margin-left: 5%;
 }
 .poster {
   width: 100%;
   height: 100vh;
-  background-color: #5cdb95;
+  background-color: cyan;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@
   font-size: 30px;
   margin-block: 13%;
   padding: 5px;
-  border-left: 4px solid #5cdb95;
+  border-left: 4px solid cyan;
 }
 
 .chart {
@@ -102,6 +102,39 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 5px;
+  margin-top: -30px;
+  margin-bottom: 70px;
+}
+
+.hobbies p {
+  font-size: 23px;
+}
+
+.resume {
+  outline: none;
+  font-size: 17px;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 100px;
+  background: linear-gradient(70deg, cyan 50%, white 50%);
+  color: cyan;
+  background-size: 400%;
+  background-position: right;
+  border: 1px solid cyan;
+  transition: 1s;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  align-self: flex-start;
+  letter-spacing: 2px;
+}
+
+.resume:hover {
+  background-position: left;
+  color: black;
 }
 
 .next_step {
@@ -135,7 +168,7 @@
 .directions_btn {
   width: 100px;
   text-align: center;
-  background: linear-gradient(to right, cyan, darkcyan, #5cdb95, black);
+  background: linear-gradient(to right, cyan, darkcyan, #5cdb95, black 50%);
   background-size: 600%;
   background-position: right;
   padding: 10px;
@@ -180,8 +213,20 @@
 }
 
 @media (max-width: 420px) {
+  .about_intro h3 {
+    margin-block: 20%;
+  }
+
+  .hobbies {
+    margin-top: -10px;
+  }
+
+  .hobbies p {
+    font-size: 18px;
+  }
+
   .next_step {
-    padding-bottom: 15%;
+    margin-block: 14%;
   }
   .directions {
     flex-direction: column;
