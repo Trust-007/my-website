@@ -29,7 +29,7 @@ const Welcome = () => {
           I'm Trust, <br />
           Software Engineer
         </h2>
-        <p>React & Rails Enthusiaste</p>
+        <p>React, Rails, & Laravel Enthusiast</p>
       </div>
     </div>
   );
