@@ -6,7 +6,6 @@ import classes from "./NavHeader.module.css";
 
 const NavHeader = () => {
   return (
-    <>
       <nav>
         <ul>
           <li>
@@ -38,7 +37,6 @@ const NavHeader = () => {
           </li>
         </ul>
       </nav>
-    </>
   );
 };
 

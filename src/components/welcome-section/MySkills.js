@@ -116,7 +116,7 @@ const MySkills = () => {
               />
             </div>
             <a
-              href="https://docs.google.com/document/d/1AU5zjemvTW8AvRFUmpOEyz8tnY5tGk63fJpnC1P3je8/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1P3E54vl0hNQy2ShKC3eJpPg4aAdLswAAhsxZdEm9W5A/edit?usp=sharing"
               className={classes.resume}
             >
               My Resume
