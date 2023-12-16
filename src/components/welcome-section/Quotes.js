@@ -30,7 +30,7 @@ const Quotes = () => {
     }
   }, [api_key]);
 
-  const { quote, author, category } = quotes;
+  const { quote, author } = quotes;
 
   return (
     <div className={classes.container}>
