@@ -5,16 +5,16 @@ const Socials = () => {
   return (
     <div className={classes.icons}>
       <a href="https://www.github.com/Trust-007">
-        <BsGithub className={classes.github} />
+        <BsGithub className={classes.github} color="#045256" />
       </a>
       <a href="https://www.linkedin.com/in/trust-simeon">
-        <BsLinkedin className={classes.linkedin} />
+        <BsLinkedin className={classes.linkedin} color="#045256"  />
       </a>
       <a href="https://www.twitter.com/simeontrust7">
-        <BsTwitter className={classes.twitter} />
+        <BsTwitter className={classes.twitter} color="#045256"  />
       </a>
       <a href="https://www.instagram.com/trustsimeon/">
-        <BsInstagram className={classes.instagram} />
+        <BsInstagram className={classes.instagram} color="#045256"  />
       </a>
     </div>
   );

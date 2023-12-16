@@ -5,7 +5,7 @@
 blockquote {
   font-family: "Pacifico", cursive;
   font-size: 23px;
-  color: white;
+  color: #98B8BA;
   margin-bottom: 5%;
   font-weight: 100;
 }
@@ -21,13 +21,7 @@ blockquote {
   font-style: italic;
   font-weight: 100;
   font-size: 20px;
-  color: cyan;
-}
-
-.category {
-  font-family: "Lato", sans-serif;
-  color: white;
-  font-size: 20px;
+  color: #98B8BA;
 }
 
 @media (max-width: 420px) {

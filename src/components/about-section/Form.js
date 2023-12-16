@@ -80,7 +80,7 @@ const Form = () => {
       >
         Message
       </label>
-      <button type="submit">Get in Touch</button>
+      <button type="submit">Get in touch</button>
     </form>
   );
 };

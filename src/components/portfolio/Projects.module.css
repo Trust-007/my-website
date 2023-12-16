@@ -1,10 +1,12 @@
 .container {
   display: grid;
   height: 95vh;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: auto auto auto auto;
   justify-content: center;
-  margin-left: 5.5%;
-  background-color: rgb(36, 33, 33);
+  align-items: center;
+  margin-left: 4rem;
+  gap: 10px;
+  background-color: transparent;
   z-index: 50;
 }
 
@@ -40,22 +42,23 @@
   cursor: pointer;
   transition: 0.5s;
   width: 100px;
-  background: linear-gradient(70deg, cyan 50%, black 50%);
-  color: cyan;
+  background: linear-gradient(70deg, #045256 50%, #98B8BA 50%);
+  color: #045256;
   background-size: 400%;
   background-position: right;
-  border: 1px solid cyan;
+  border: 1px solid #045256;
   transition: 1s;
   text-decoration: none;
   padding: 10px;
   text-align: center;
   align-self: flex-start;
   letter-spacing: 2px;
+  border-radius: 7px;
 }
 
 .more_projects:hover {
   background-position: left;
-  color: black;
+  color: #98B8BA;
 }
 
 @keyframes intro {

@@ -30,14 +30,13 @@ const Quotes = () => {
     }
   }, [api_key]);
 
-  const { quote, author, category } = quotes;
+  const { quote, author } = quotes;
 
   return (
     <div className={classes.container}>
       <blockquote>{`"${quote}"`}</blockquote>
       <div className={classes.author_category}>
         <p className={classes.author}>{`-${author}`}</p>
-        <p className={classes.category}>{category}</p>
       </div>
     </div>
   );

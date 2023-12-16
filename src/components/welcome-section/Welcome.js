@@ -27,7 +27,7 @@ const Welcome = () => {
       <div className={classes.contain_paragraph}>
         <h2>
           I'm Trust, <br />
-          Software Engineer
+          Full-Stack Developer
         </h2>
         <p>React, Rails, & Laravel Enthusiast</p>
       </div>
