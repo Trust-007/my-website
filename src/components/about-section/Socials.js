@@ -8,7 +8,7 @@ const Socials = () => {
         <BsGithub className={classes.github} color="#045256" />
       </a>
       <a href="https://www.linkedin.com/in/trust-simeon">
-        <BsLinkedin className={classes.linkedin} color="#045256"  />
+        <BsLinkedin className={classes.linkedin} color="#045256" />
       </a>
       <a href="https://www.twitter.com/simeontrust7">
         <BsTwitter className={classes.twitter} color="#045256"  />
