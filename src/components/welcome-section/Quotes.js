@@ -37,7 +37,6 @@ const Quotes = () => {
       <blockquote>{`"${quote}"`}</blockquote>
       <div className={classes.author_category}>
         <p className={classes.author}>{`-${author}`}</p>
-        <p className={classes.category}>{category}</p>
       </div>
     </div>
   );

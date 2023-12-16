@@ -69,10 +69,6 @@ const projects = [
 ];
 
 const Projects = () => {
-  const projectList = projects.map((project) => {
-    const { image, liveLink, sourceLink, alt, id } = project;
-    return <ProjectCard key={id} data={{ image, liveLink, sourceLink, alt }} />;
-  });
   return (
     <div>
       <div className={classes.pop_message}>
@@ -87,7 +83,10 @@ const Projects = () => {
           See more!
         </a>
       </div>
-      <ul className={classes.container}>{projectList}</ul>;
+      <ul className={classes.container}>{projects.map((project) => {
+    const { image, liveLink, sourceLink, alt, id } = project;
+    return <ProjectCard key={id} data={{ image, liveLink, sourceLink, alt }} />;
+  })}</ul>;
     </div>
   );
 };

@@ -1,8 +1,9 @@
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100vh;
-  background-color: black;
+  width: 4rem;
+  background-color: #98B8BA;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -18,7 +19,6 @@ nav ul {
   list-style: none;
   text-decoration: none;
   gap: 40px;
-  padding: 10px;
 }
 
 nav ul li {
@@ -28,19 +28,17 @@ nav ul li {
 }
 
 nav ul li p {
-  padding-block: 5px;
-  padding-inline: 5px;
-  color: #edf5e1;
+  color: #045256;
   font-size: 13px;
   opacity: 0;
   pointer-events: none;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #769293;
   cursor: pointer;
 }
 nav ul li:hover p {
@@ -63,7 +61,7 @@ nav ul li:hover .Icon {
 }
 
 .active {
-  color: cyan;
+  color: #045256;
 }
 
 .active .Icon {

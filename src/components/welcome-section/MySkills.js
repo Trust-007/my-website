@@ -24,7 +24,7 @@ const MySkills = () => {
         <div className={classes.skills_section}>
           <div className={classes.about_intro}>
             <h2>
-              I am a Software Engineer and an aspiring Data Scientist from
+              I am a Full-Stack Developer from
               Lagos, Nigeria.
             </h2>
             <p>
@@ -109,17 +109,17 @@ const MySkills = () => {
                   3000,
                 ]}
                 wrapper="p"
-                cursor={false}
+                cursor={true}
                 repeat={Infinity}
                 speed={0}
-                style={{ color: "sandybrown" }}
+                style={{ color: "#045256", fontWeight: "700" }}
               />
             </div>
             <a
               href="https://docs.google.com/document/d/1P3E54vl0hNQy2ShKC3eJpPg4aAdLswAAhsxZdEm9W5A/edit?usp=sharing"
               className={classes.resume}
             >
-              My Resume
+              My resume
             </a>
           </div>
         </div>

@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-evenly;
   z-index: 1;
-  margin-left: 5%;
+  margin-left: 4rem;
   font-family: "Lato", "sans-serif";
 }
 
 .poster {
   width: 45%;
   height: 100vh;
-  background-color: white;
+  background-color: #045256;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,13 +21,13 @@
   font-family: "Dancing Script", cursive;
   font-weight: 600;
   font-size: 50px;
-  color: black;
+  color: #98B8BA;
 }
 
 .contact_section {
   width: 55%;
   height: fit-content;
-  background-color: black;
+  background-color: #98B8BA;
   text-align: start;
 }
 
@@ -36,8 +36,8 @@
   width: 80%;
   margin: auto;
   margin-block: 50px;
-  color: white;
-  font-weight: 300;
+  color: #045256;
+  font-weight: 400;
   line-height: 30px;
   animation: Slide 0.5s linear 1;
 }

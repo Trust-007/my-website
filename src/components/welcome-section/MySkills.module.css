@@ -3,12 +3,13 @@
   justify-content: space-evenly;
   align-items: flex-start;
   z-index: 1;
-  margin-left: 5%;
+  margin-left: 4rem;
+  border-bottom: 2px solid #98B8BA;
 }
 .poster {
   width: 100%;
   height: 100vh;
-  background-color: cyan;
+  background-color: #045256;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,11 +21,12 @@
   font-family: "Dancing Script", cursive;
   font-weight: 600;
   font-size: 50px;
+  color: #98B8BA;
 }
 
 .skills_section {
   width: 100%;
-  background-color: white;
+  background-color: #98B8BA;
   font-family: "Lato", sans-serif;
 }
 
@@ -34,13 +36,15 @@
 }
 
 .about_intro h2 {
-  font-size: 18px;
+  font-size: 24px;
+  color: #045256;
 }
 
 .about_intro p {
   font-size: 17px;
   line-height: 24px;
   margin-top: 7%;
+  color: #0E3C3E;
 }
 
 .about_intro h3 {
@@ -48,7 +52,8 @@
   font-size: 30px;
   margin-block: 13%;
   padding: 5px;
-  border-left: 4px solid cyan;
+  color: #045256;
+  border-left: 4px solid #BEE1E1;
 }
 
 .chart {
@@ -58,6 +63,7 @@
 .chart span {
   font-size: 17px;
   font-weight: 600;
+  color: #0E3C3E;
 }
 
 .chart footer {
@@ -74,12 +80,12 @@
 }
 
 .front_end {
-  background-color: #5cdb95;
+  background-color: #1C8868;
   transition-delay: 0.7s;
 }
 
 .back_end {
-  background-color: rgb(255, 34, 83);
+  background-color: #AD4F4F;
   transition-delay: 0.9s;
 }
 
@@ -89,7 +95,7 @@
 }
 
 .rails {
-  background-color: aqua;
+  background-color: #DBA439;
   transition-delay: 1.3s;
 }
 
@@ -109,6 +115,7 @@
 
 .hobbies p {
   font-size: 23px;
+  color: #0E3C3E;
 }
 
 .resume {
@@ -119,28 +126,29 @@
   cursor: pointer;
   transition: 0.5s;
   width: 100px;
-  background: linear-gradient(70deg, cyan 50%, white 50%);
-  color: cyan;
+  background: linear-gradient(70deg, #045256 50%, #98B8BA 50%);
+  color: #045256;
   background-size: 400%;
   background-position: right;
-  border: 1px solid cyan;
+  border: 1px solid #045256;
   transition: 1s;
   text-decoration: none;
   padding: 10px;
   text-align: center;
   align-self: flex-start;
   letter-spacing: 2px;
+  border-radius: 7px;
 }
 
 .resume:hover {
   background-position: left;
-  color: black;
+  color: #98B8BA;
 }
 
 .next_step {
   width: 100%;
   height: 100vh;
-  background-color: rgb(24, 21, 21);
+  background-color: #045256;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,15 +169,17 @@
 .directions_btn {
   width: 100px;
   text-align: center;
-  background: linear-gradient(to right, cyan, darkcyan, #5cdb95, black 50%);
+  background: linear-gradient(to right, cyan, darkcyan, #5cdb95, #98B8BA 50%);
   background-size: 600%;
   background-position: right;
   padding: 10px;
   text-decoration: none;
-  color: white;
+  color: #045256;
   font-size: 19;
+  font-weight: 500;
   letter-spacing: 2px;
   transition: 2s;
+  border-radius: 7px;
 }
 
 .directions_btn:hover {
