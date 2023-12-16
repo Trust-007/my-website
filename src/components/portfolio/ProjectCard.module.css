@@ -6,6 +6,7 @@
   justify-content: center;
   overflow: hidden;
   z-index: 60;
+  border-radius: 10px;
 }
 
 .pic {
@@ -48,8 +49,9 @@
   font-weight: 400;
   cursor: pointer;
   background-color: rgb(9, 146, 146);
-  padding: 15px;
-  border-radius: 50px;
+  padding-inline: 15px;
+  padding-block: 7px;
+  border-radius: 6px;
   color: black;
   text-align: center;
   letter-spacing: 2px;

@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
   margin-left: 4rem;
+  padding-inline: 20px;
   gap: 10px;
-  background-color: transparent;
+  background-color: black;
   z-index: 50;
 }
 
