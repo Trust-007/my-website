@@ -70,7 +70,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div>
+    <div >
       <div className={classes.pop_message}>
         <p>
           Here are some of the recent projects I've worked or collaborated on.

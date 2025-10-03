@@ -6,12 +6,13 @@ const Quotes = () => {
   const [quotes, setQuotes] = useState("");
 
   useEffect(() => {
-    const categories = ["courage", "alone", "cool", "life", "fear", "dreams"];
-    const counter = Math.floor(Math.random() * 6);
+    // const categories = ["courage", "alone", "cool", "life", "fear", "dreams"];
+    // const counter = Math.floor(Math.random() * 6);
     try {
+      // ?category=${categories[counter]}
       const fetchData = async () => {
         const response = await fetch(
-          `https://api.api-ninjas.com/v1/quotes?category=${categories[counter]}`,
+          'https://api.api-ninjas.com/v1/quotes',
           {
             method: "GET",
             headers: {
